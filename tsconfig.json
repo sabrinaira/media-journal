@@ -1,19 +1,20 @@
 {
   "compilerOptions": {
     "target": "ES6", // Target modern JavaScript
-    "module": "NodeNext", // Use ECMAScript modules
+    "module": "ESNext", // Use ECMAScript modules
     "lib": ["DOM", "ES6"], // Include libraries for browser and ES6
     "allowJs": true, // Allow JavaScript files
     "jsx": "react-jsx", // Enables support for React’s JSX syntax, using the modern react-jsx setting for newer React versions.
-    "moduleResolution": "NodeNext", // Resolve modules using Node conventions
+    "moduleResolution": "Node", // Resolve modules using Node conventions
     "outDir": "./dist", // Output compiled files to `dist`
     "rootDir": "./src", // Root directory for TypeScript files
     "strict": true, // Enable strict type-checking
     "esModuleInterop": true, // Enable interoperability between CommonJS and ES6 modules
-    "noEmit": false, // Ensures TypeScript does not output any files
+    // "noEmit": true, // Ensures TypeScript does not output any files
     // "allowImportingTsExtensions": true, // Enables importing .js/.jsx/.ts/.tsx extensions
     "forceConsistentCasingInFileNames": true, // Ensure file name casing consistency
-    "skipLibCheck": true // Skip type checking of declaration files for better performance
+    "skipLibCheck": true, // Skip type checking of declaration files for better performance
+    "sourceMap": true //& generates .map files; maps compiled JS to TS (for debugging)
   },
   "include": ["src/**/*.ts", "src/**/*.tsx"], // Include TypeScript and TSX files
   "exclude": ["node_modules", "dist"] // Exclude unnecessary directories

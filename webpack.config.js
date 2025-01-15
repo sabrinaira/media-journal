@@ -25,16 +25,21 @@ export default {
         use: ['style-loader', 'css-loader'],
       },
       {
-        test: /\.js$/,  // Add loader for JavaScript files
+        test: /\.(js|jsx|ts|tsx)$/,
         exclude: /node_modules/,
-        use: 'babel-loader',  // Make sure JavaScript files are transpiled
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env', '@babel/preset-react', '@babel/preset-typescript'],
+          },
+        },
       },
     ],
   },
   resolve: {
     extensions: ['.tsx', '.ts', '.jsx', '.js'],
     alias: {
-      '@components': path.resolve(__dirname, 'src', 'client', 'components'),  // Alias for components
+      '@components': path.resolve(__dirname, 'src', 'client', 'components'), // Alias for components
     },
   },
   plugins: [

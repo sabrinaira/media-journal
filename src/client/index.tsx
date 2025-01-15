@@ -1,9 +1,16 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './App.js';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
 
-// Create a root for rendering
-const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
-);
-root.render(<App />);
+// const root = ReactDOM.createRoot(document.getElementById('root')!);
+// root.render(<App />);
+
+const rootElement = document.getElementById('root');
+
+// Ensure rootElement is not null
+if (rootElement) {
+  const root = ReactDOM.createRoot(rootElement);
+  root.render(<App />);
+} else {
+  console.error("Root element not found. Application cannot render.");
+}

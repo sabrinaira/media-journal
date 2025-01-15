@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../public/styles.css';
-import MediaList from './components/MediaList.js';
+import MediaList from './components/MediaList';
 
 const App = () => {
   return (
