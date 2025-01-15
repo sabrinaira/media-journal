@@ -1,4 +1,5 @@
 # Media Journal App
+###### Practice Project
 
 A visual media log of movies, shows, anime, and more.
 
@@ -11,4 +12,4 @@ A visual media log of movies, shows, anime, and more.
 - [React](https://react.dev/)
 
 ---
-Developed by [Sabrina Ira](https://github.com/sabrinaira)
+Co-Developed by [Sabrina Ira](https://github.com/sabrinaira) & [Nico Henry](https://github.com/Nico21221)
